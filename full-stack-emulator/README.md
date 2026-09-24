@@ -250,10 +250,6 @@ The backend creates this file automatically on first run if it does not exist:
 backend/emulator_config.json
 ```
 
-### Current limitations
-- Runtime verification depends on the target machine's installed Python hardware libraries and attached boards.
-- The current frontend config page exposes the full RTD and valve tables, but it is still a first-pass editor rather than a polished production UI.
-- Arctic HP UI currently focuses on register editing and server control, not a custom visual dashboard like the NYSERDA Arctic page.
 
 ## Troubleshooting
 
