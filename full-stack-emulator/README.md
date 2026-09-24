@@ -1,6 +1,6 @@
 # Full Stack Emulator
 
-A modular full-stack emulator built from the Tkinter CV/OV emulator logic and the NYSERDA-style backend layering.
+A modular full-stack emulator built from the Tkinter CV/OV emulator logic and the controller-style backend layering.
 
 It covers four emulator domains:
 - RTD ladder-resistor emulation through 74HC595 chain logic
