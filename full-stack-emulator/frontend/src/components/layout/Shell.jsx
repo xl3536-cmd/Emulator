@@ -3,7 +3,7 @@ export default function Shell({ tabs, activeTab, onTabChange, children, status }
     <div className="app-shell">
       <header className="hero">
         <div>
-          <h1>P5-2 Full Stack Emulator</h1>
+          <h1>Full Stack Emulator</h1>
           <p className="hero-copy">RTD ladder control, grouped CV and OV valve emulation, leak-sensor analog outputs, and Arctic heat-pump runtime tools.</p>
         </div>
         <div className="hero-status">
