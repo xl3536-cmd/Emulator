@@ -1,0 +1,2161 @@
+{
+  "rtd": {
+    "board_count": 44,
+    "invert_bits": false,
+    "reverse_byte_order": true,
+    "playback": {
+      "fast_interval_seconds": 1.0,
+      "slow_interval_seconds": 60.0,
+      "loop": true
+    },
+    "sensors": [
+      {
+        "sensor_name": "T1",
+        "board_index": 0,
+        "position": 1,
+        "bit_width": 5,
+        "logical_stack": 0,
+        "logical_channel": 1,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T2",
+        "board_index": 1,
+        "position": 2,
+        "bit_width": 5,
+        "logical_stack": 0,
+        "logical_channel": 2,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T3",
+        "board_index": 2,
+        "position": 3,
+        "bit_width": 5,
+        "logical_stack": 0,
+        "logical_channel": 3,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T4",
+        "board_index": 3,
+        "position": 4,
+        "bit_width": 5,
+        "logical_stack": 0,
+        "logical_channel": 4,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T5",
+        "board_index": 4,
+        "position": 5,
+        "bit_width": 5,
+        "logical_stack": 0,
+        "logical_channel": 5,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T6",
+        "board_index": 5,
+        "position": 6,
+        "bit_width": 5,
+        "logical_stack": 0,
+        "logical_channel": 6,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T37",
+        "board_index": 6,
+        "position": 7,
+        "bit_width": 5,
+        "logical_stack": 0,
+        "logical_channel": 7,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T38",
+        "board_index": 7,
+        "position": 8,
+        "bit_width": 5,
+        "logical_stack": 0,
+        "logical_channel": 8,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T7",
+        "board_index": 8,
+        "position": 9,
+        "bit_width": 5,
+        "logical_stack": 1,
+        "logical_channel": 1,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T8",
+        "board_index": 9,
+        "position": 10,
+        "bit_width": 5,
+        "logical_stack": 1,
+        "logical_channel": 2,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T9",
+        "board_index": 10,
+        "position": 11,
+        "bit_width": 5,
+        "logical_stack": 1,
+        "logical_channel": 3,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T10",
+        "board_index": 11,
+        "position": 12,
+        "bit_width": 5,
+        "logical_stack": 1,
+        "logical_channel": 4,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T11",
+        "board_index": 12,
+        "position": 13,
+        "bit_width": 5,
+        "logical_stack": 1,
+        "logical_channel": 5,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T12",
+        "board_index": 13,
+        "position": 14,
+        "bit_width": 5,
+        "logical_stack": 1,
+        "logical_channel": 6,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T39",
+        "board_index": 14,
+        "position": 15,
+        "bit_width": 5,
+        "logical_stack": 1,
+        "logical_channel": 7,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T40",
+        "board_index": 15,
+        "position": 16,
+        "bit_width": 5,
+        "logical_stack": 1,
+        "logical_channel": 8,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T13",
+        "board_index": 16,
+        "position": 17,
+        "bit_width": 5,
+        "logical_stack": 2,
+        "logical_channel": 1,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T14",
+        "board_index": 17,
+        "position": 18,
+        "bit_width": 5,
+        "logical_stack": 2,
+        "logical_channel": 2,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T15",
+        "board_index": 18,
+        "position": 19,
+        "bit_width": 5,
+        "logical_stack": 2,
+        "logical_channel": 3,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T16",
+        "board_index": 19,
+        "position": 20,
+        "bit_width": 5,
+        "logical_stack": 2,
+        "logical_channel": 4,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T17",
+        "board_index": 20,
+        "position": 21,
+        "bit_width": 5,
+        "logical_stack": 2,
+        "logical_channel": 5,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T18",
+        "board_index": 21,
+        "position": 22,
+        "bit_width": 5,
+        "logical_stack": 2,
+        "logical_channel": 6,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T19",
+        "board_index": 22,
+        "position": 23,
+        "bit_width": 5,
+        "logical_stack": 2,
+        "logical_channel": 7,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T20",
+        "board_index": 23,
+        "position": 24,
+        "bit_width": 5,
+        "logical_stack": 2,
+        "logical_channel": 8,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T21",
+        "board_index": 24,
+        "position": 25,
+        "bit_width": 5,
+        "logical_stack": 3,
+        "logical_channel": 1,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T22",
+        "board_index": 25,
+        "position": 26,
+        "bit_width": 5,
+        "logical_stack": 3,
+        "logical_channel": 2,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T23",
+        "board_index": 26,
+        "position": 27,
+        "bit_width": 5,
+        "logical_stack": 3,
+        "logical_channel": 3,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T24",
+        "board_index": 27,
+        "position": 28,
+        "bit_width": 5,
+        "logical_stack": 3,
+        "logical_channel": 4,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T25",
+        "board_index": 28,
+        "position": 29,
+        "bit_width": 5,
+        "logical_stack": 3,
+        "logical_channel": 5,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T26",
+        "board_index": 29,
+        "position": 30,
+        "bit_width": 5,
+        "logical_stack": 3,
+        "logical_channel": 6,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T27",
+        "board_index": 30,
+        "position": 31,
+        "bit_width": 5,
+        "logical_stack": 3,
+        "logical_channel": 7,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T28",
+        "board_index": 31,
+        "position": 32,
+        "bit_width": 5,
+        "logical_stack": 3,
+        "logical_channel": 8,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T29",
+        "board_index": 32,
+        "position": 33,
+        "bit_width": 5,
+        "logical_stack": 4,
+        "logical_channel": 1,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T30",
+        "board_index": 33,
+        "position": 34,
+        "bit_width": 5,
+        "logical_stack": 4,
+        "logical_channel": 2,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T31",
+        "board_index": 34,
+        "position": 35,
+        "bit_width": 5,
+        "logical_stack": 4,
+        "logical_channel": 3,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T32",
+        "board_index": 35,
+        "position": 36,
+        "bit_width": 5,
+        "logical_stack": 4,
+        "logical_channel": 4,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T33",
+        "board_index": 36,
+        "position": 37,
+        "bit_width": 5,
+        "logical_stack": 4,
+        "logical_channel": 5,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T34",
+        "board_index": 37,
+        "position": 38,
+        "bit_width": 5,
+        "logical_stack": 4,
+        "logical_channel": 6,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T35",
+        "board_index": 38,
+        "position": 39,
+        "bit_width": 5,
+        "logical_stack": 4,
+        "logical_channel": 7,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T36",
+        "board_index": 39,
+        "position": 40,
+        "bit_width": 5,
+        "logical_stack": 4,
+        "logical_channel": 8,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T37C",
+        "board_index": 40,
+        "position": 41,
+        "bit_width": 5,
+        "logical_stack": 5,
+        "logical_channel": 1,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T38C",
+        "board_index": 41,
+        "position": 42,
+        "bit_width": 5,
+        "logical_stack": 5,
+        "logical_channel": 2,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T39C",
+        "board_index": 42,
+        "position": 43,
+        "bit_width": 5,
+        "logical_stack": 5,
+        "logical_channel": 3,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      },
+      {
+        "sensor_name": "T40C",
+        "board_index": 43,
+        "position": 44,
+        "bit_width": 5,
+        "logical_stack": 5,
+        "logical_channel": 4,
+        "min_res_ohms": 95.0,
+        "max_res_ohms": 150.0,
+        "temp_min_c": -10.0,
+        "temp_max_c": 80.0,
+        "res_step_ohms": 2.0,
+        "use_custom_equation": false,
+        "custom_equation_a": null,
+        "custom_equation_b": null,
+        "output_temp_c": null
+      }
+    ]
+  },
+  "valves": {
+    "ball_valves": [
+      {
+        "id": "CV1",
+        "name": "PCMHCV1",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": 33,
+          "channel": 3
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 1
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 1
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "CV2",
+        "name": "PCMHCV2",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": 33,
+          "channel": 4
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 2
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 2
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "CV3",
+        "name": "NORDCV1",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": 34,
+          "channel": 1
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 3
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 3
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "CV4",
+        "name": "NORDOV2",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": 34,
+          "channel": 2
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 4
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 4
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "CV5",
+        "name": "NORDOV3",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": 34,
+          "channel": 3
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 5
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 5
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "CV6",
+        "name": "NORDOV4",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": 34,
+          "channel": 4
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 6
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 6
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "CV7",
+        "name": "PCMCCV1",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": 35,
+          "channel": 7
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 7
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 7
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "CV8",
+        "name": "PCMCCV2",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": 35,
+          "channel": 8
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 8
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 8
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "CV9",
+        "name": "CMCV1",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": 36,
+          "channel": 13
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 9
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 9
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "CV10",
+        "name": "CMCV2",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": 36,
+          "channel": 14
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 10
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 10
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "CV11",
+        "name": "CMCV3",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": 36,
+          "channel": 15
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 11
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 11
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "CV12",
+        "name": "CMCV4",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": 36,
+          "channel": 16
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 12
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 12
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "CV13",
+        "name": "CMCV5",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": 37,
+          "channel": 1
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 13
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 13
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "CV14",
+        "name": "CMCV6",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": 37,
+          "channel": 2
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 14
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 14
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "CV15",
+        "name": "CMCV7",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": 37,
+          "channel": 3
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 15
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 15
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "CV16",
+        "name": "CMCV8",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": 37,
+          "channel": 4
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 16
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 16
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "OV1",
+        "name": "PCMHOV1",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 32,
+          "channel": 2
+        },
+        "close_detector": {
+          "i2c_address": 32,
+          "channel": 1
+        },
+        "open_feedback": {
+          "stack": 0,
+          "channel": 2
+        },
+        "close_feedback": {
+          "stack": 0,
+          "channel": 1
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV2",
+        "name": "PCMHOV2",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 32,
+          "channel": 4
+        },
+        "close_detector": {
+          "i2c_address": 32,
+          "channel": 3
+        },
+        "open_feedback": {
+          "stack": 0,
+          "channel": 4
+        },
+        "close_feedback": {
+          "stack": 0,
+          "channel": 3
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV3",
+        "name": "PCMHOV3",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 32,
+          "channel": 6
+        },
+        "close_detector": {
+          "i2c_address": 32,
+          "channel": 5
+        },
+        "open_feedback": {
+          "stack": 0,
+          "channel": 6
+        },
+        "close_feedback": {
+          "stack": 0,
+          "channel": 5
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV4",
+        "name": "PCMHOV4",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 32,
+          "channel": 8
+        },
+        "close_detector": {
+          "i2c_address": 32,
+          "channel": 7
+        },
+        "open_feedback": {
+          "stack": 0,
+          "channel": 8
+        },
+        "close_feedback": {
+          "stack": 0,
+          "channel": 7
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV5",
+        "name": "PCMHOV5",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 32,
+          "channel": 10
+        },
+        "close_detector": {
+          "i2c_address": 32,
+          "channel": 9
+        },
+        "open_feedback": {
+          "stack": 0,
+          "channel": 10
+        },
+        "close_feedback": {
+          "stack": 0,
+          "channel": 9
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV6",
+        "name": "PCMHOV6",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 32,
+          "channel": 12
+        },
+        "close_detector": {
+          "i2c_address": 32,
+          "channel": 11
+        },
+        "open_feedback": {
+          "stack": 0,
+          "channel": 12
+        },
+        "close_feedback": {
+          "stack": 0,
+          "channel": 11
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV7",
+        "name": "PCMHOV7",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 32,
+          "channel": 14
+        },
+        "close_detector": {
+          "i2c_address": 32,
+          "channel": 13
+        },
+        "open_feedback": {
+          "stack": 0,
+          "channel": 14
+        },
+        "close_feedback": {
+          "stack": 0,
+          "channel": 13
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV8",
+        "name": "PCMHOV8",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 32,
+          "channel": 16
+        },
+        "close_detector": {
+          "i2c_address": 32,
+          "channel": 15
+        },
+        "open_feedback": {
+          "stack": 0,
+          "channel": 16
+        },
+        "close_feedback": {
+          "stack": 0,
+          "channel": 15
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV9",
+        "name": "PCMHOV9",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 33,
+          "channel": 2
+        },
+        "close_detector": {
+          "i2c_address": 33,
+          "channel": 1
+        },
+        "open_feedback": {
+          "stack": 1,
+          "channel": 2
+        },
+        "close_feedback": {
+          "stack": 1,
+          "channel": 1
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV10",
+        "name": "NORDOV1",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 33,
+          "channel": 6
+        },
+        "close_detector": {
+          "i2c_address": 33,
+          "channel": 5
+        },
+        "open_feedback": {
+          "stack": 1,
+          "channel": 4
+        },
+        "close_feedback": {
+          "stack": 1,
+          "channel": 3
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV11",
+        "name": "NORDOV2",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 33,
+          "channel": 8
+        },
+        "close_detector": {
+          "i2c_address": 33,
+          "channel": 7
+        },
+        "open_feedback": {
+          "stack": 1,
+          "channel": 6
+        },
+        "close_feedback": {
+          "stack": 1,
+          "channel": 5
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV12",
+        "name": "NORDOV3",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 33,
+          "channel": 10
+        },
+        "close_detector": {
+          "i2c_address": 33,
+          "channel": 9
+        },
+        "open_feedback": {
+          "stack": 1,
+          "channel": 8
+        },
+        "close_feedback": {
+          "stack": 1,
+          "channel": 7
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV13",
+        "name": "NORDOV4",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 33,
+          "channel": 12
+        },
+        "close_detector": {
+          "i2c_address": 33,
+          "channel": 11
+        },
+        "open_feedback": {
+          "stack": 1,
+          "channel": 10
+        },
+        "close_feedback": {
+          "stack": 1,
+          "channel": 9
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV14",
+        "name": "NORDOV5",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 33,
+          "channel": 14
+        },
+        "close_detector": {
+          "i2c_address": 33,
+          "channel": 13
+        },
+        "open_feedback": {
+          "stack": 1,
+          "channel": 12
+        },
+        "close_feedback": {
+          "stack": 1,
+          "channel": 11
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV15",
+        "name": "NORDOV6",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 33,
+          "channel": 16
+        },
+        "close_detector": {
+          "i2c_address": 33,
+          "channel": 15
+        },
+        "open_feedback": {
+          "stack": 1,
+          "channel": 14
+        },
+        "close_feedback": {
+          "stack": 1,
+          "channel": 13
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV16",
+        "name": "PCMCOV1",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 34,
+          "channel": 6
+        },
+        "close_detector": {
+          "i2c_address": 34,
+          "channel": 5
+        },
+        "open_feedback": {
+          "stack": 1,
+          "channel": 16
+        },
+        "close_feedback": {
+          "stack": 1,
+          "channel": 15
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV17",
+        "name": "PCMCOV2",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 34,
+          "channel": 8
+        },
+        "close_detector": {
+          "i2c_address": 34,
+          "channel": 7
+        },
+        "open_feedback": {
+          "stack": 2,
+          "channel": 2
+        },
+        "close_feedback": {
+          "stack": 2,
+          "channel": 1
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV18",
+        "name": "PCMCOV3",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 34,
+          "channel": 10
+        },
+        "close_detector": {
+          "i2c_address": 34,
+          "channel": 9
+        },
+        "open_feedback": {
+          "stack": 2,
+          "channel": 4
+        },
+        "close_feedback": {
+          "stack": 2,
+          "channel": 3
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV19",
+        "name": "PCMCOV4",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 34,
+          "channel": 12
+        },
+        "close_detector": {
+          "i2c_address": 34,
+          "channel": 11
+        },
+        "open_feedback": {
+          "stack": 2,
+          "channel": 6
+        },
+        "close_feedback": {
+          "stack": 2,
+          "channel": 5
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV20",
+        "name": "PCMCOV5",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 34,
+          "channel": 14
+        },
+        "close_detector": {
+          "i2c_address": 34,
+          "channel": 13
+        },
+        "open_feedback": {
+          "stack": 2,
+          "channel": 8
+        },
+        "close_feedback": {
+          "stack": 2,
+          "channel": 7
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV21",
+        "name": "PCMCOV6",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 34,
+          "channel": 16
+        },
+        "close_detector": {
+          "i2c_address": 34,
+          "channel": 15
+        },
+        "open_feedback": {
+          "stack": 2,
+          "channel": 10
+        },
+        "close_feedback": {
+          "stack": 2,
+          "channel": 9
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV22",
+        "name": "PCMCOV7",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 35,
+          "channel": 2
+        },
+        "close_detector": {
+          "i2c_address": 35,
+          "channel": 1
+        },
+        "open_feedback": {
+          "stack": 2,
+          "channel": 12
+        },
+        "close_feedback": {
+          "stack": 2,
+          "channel": 11
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV23",
+        "name": "PCMCOV8",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 35,
+          "channel": 4
+        },
+        "close_detector": {
+          "i2c_address": 35,
+          "channel": 3
+        },
+        "open_feedback": {
+          "stack": 2,
+          "channel": 14
+        },
+        "close_feedback": {
+          "stack": 2,
+          "channel": 13
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV24",
+        "name": "PCMCOV9",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 35,
+          "channel": 6
+        },
+        "close_detector": {
+          "i2c_address": 35,
+          "channel": 5
+        },
+        "open_feedback": {
+          "stack": 2,
+          "channel": 16
+        },
+        "close_feedback": {
+          "stack": 2,
+          "channel": 15
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV25",
+        "name": "CMOV1",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 35,
+          "channel": 10
+        },
+        "close_detector": {
+          "i2c_address": 35,
+          "channel": 9
+        },
+        "open_feedback": {
+          "stack": 3,
+          "channel": 2
+        },
+        "close_feedback": {
+          "stack": 3,
+          "channel": 1
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV26",
+        "name": "CMOV2",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 35,
+          "channel": 12
+        },
+        "close_detector": {
+          "i2c_address": 35,
+          "channel": 11
+        },
+        "open_feedback": {
+          "stack": 3,
+          "channel": 4
+        },
+        "close_feedback": {
+          "stack": 3,
+          "channel": 3
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV27",
+        "name": "CMOV3",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 35,
+          "channel": 14
+        },
+        "close_detector": {
+          "i2c_address": 35,
+          "channel": 13
+        },
+        "open_feedback": {
+          "stack": 3,
+          "channel": 6
+        },
+        "close_feedback": {
+          "stack": 3,
+          "channel": 5
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV28",
+        "name": "CMOV4",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 35,
+          "channel": 16
+        },
+        "close_detector": {
+          "i2c_address": 35,
+          "channel": 15
+        },
+        "open_feedback": {
+          "stack": 3,
+          "channel": 8
+        },
+        "close_feedback": {
+          "stack": 3,
+          "channel": 7
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV29",
+        "name": "CMOV5",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 36,
+          "channel": 2
+        },
+        "close_detector": {
+          "i2c_address": 36,
+          "channel": 1
+        },
+        "open_feedback": {
+          "stack": 3,
+          "channel": 10
+        },
+        "close_feedback": {
+          "stack": 3,
+          "channel": 9
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV30",
+        "name": "CMOV6",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 36,
+          "channel": 4
+        },
+        "close_detector": {
+          "i2c_address": 36,
+          "channel": 3
+        },
+        "open_feedback": {
+          "stack": 3,
+          "channel": 12
+        },
+        "close_feedback": {
+          "stack": 3,
+          "channel": 11
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV31",
+        "name": "CMOV7",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 36,
+          "channel": 6
+        },
+        "close_detector": {
+          "i2c_address": 36,
+          "channel": 5
+        },
+        "open_feedback": {
+          "stack": 3,
+          "channel": 14
+        },
+        "close_feedback": {
+          "stack": 3,
+          "channel": 13
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV32",
+        "name": "CMOV8",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 36,
+          "channel": 8
+        },
+        "close_detector": {
+          "i2c_address": 36,
+          "channel": 7
+        },
+        "open_feedback": {
+          "stack": 3,
+          "channel": 16
+        },
+        "close_feedback": {
+          "stack": 3,
+          "channel": 15
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV33",
+        "name": "CMOV9",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 36,
+          "channel": 10
+        },
+        "close_detector": {
+          "i2c_address": 36,
+          "channel": 9
+        },
+        "open_feedback": {
+          "stack": 4,
+          "channel": 2
+        },
+        "close_feedback": {
+          "stack": 4,
+          "channel": 1
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      },
+      {
+        "id": "OV34",
+        "name": "CMOV10",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 36,
+          "channel": 12
+        },
+        "close_detector": {
+          "i2c_address": 36,
+          "channel": 11
+        },
+        "open_feedback": {
+          "stack": 4,
+          "channel": 4
+        },
+        "close_feedback": {
+          "stack": 4,
+          "channel": 3
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 1.0,
+          "default_position": "open"
+        }
+      }
+    ],
+    "relay_detectors": [
+      {
+        "i2c_address": 32,
+        "i2c_bus": 1,
+        "active_low": false,
+        "use_internal_pullups": false,
+        "enabled": false
+      },
+      {
+        "i2c_address": 33,
+        "i2c_bus": 1,
+        "active_low": false,
+        "use_internal_pullups": false,
+        "enabled": false
+      },
+      {
+        "i2c_address": 34,
+        "i2c_bus": 1,
+        "active_low": false,
+        "use_internal_pullups": false,
+        "enabled": false
+      },
+      {
+        "i2c_address": 35,
+        "i2c_bus": 1,
+        "active_low": false,
+        "use_internal_pullups": false,
+        "enabled": true
+      },
+      {
+        "i2c_address": 36,
+        "i2c_bus": 1,
+        "active_low": false,
+        "use_internal_pullups": false,
+        "enabled": true
+      },
+      {
+        "i2c_address": 37,
+        "i2c_bus": 1,
+        "active_low": false,
+        "use_internal_pullups": false,
+        "enabled": true
+      }
+    ],
+    "relay_output_i2c_bus": 1
+  },
+  "leak_sensors": {
+    "sensors": []
+  },
+  "arctic_hp": {
+    "port": {
+      "serial_file": "/dev/ttyACM0",
+      "timeout": 1.5,
+      "baudrate": 2400,
+      "bytesize": 8,
+      "parity": "E",
+      "stopbits": 1
+    },
+    "devices": [
+      {
+        "device_id": 1,
+        "unit_id": 1,
+        "name": "Arctic Heat Pump 1",
+        "display_side": "left",
+        "esp32_ip": "192.168.68.79"
+      },
+      {
+        "device_id": 2,
+        "unit_id": 4,
+        "name": "Arctic Heat Pump 2",
+        "display_side": "right",
+        "esp32_ip": "192.168.68.67"
+      }
+    ]
+  },
+  "ui": {
+    "theme": "light"
+  }
+}

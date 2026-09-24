@@ -1,0 +1,49 @@
+[Unit]
+Description=Full Stack Emulator backend (FastAPI/uvicorn) + frontend deploy
+Documentation=file:///home/saxifrage/Desktop/Emulator/full-stack-emulator/infra/README.md
+After=network-online.target nginx.service
+Wants=network-online.target
+
+# Do not thrash on a permanent misconfiguration. Five failures inside 10
+# minutes and systemd gives up — check `systemctl status` for the exit code
+# and cross-reference the exit-code table in infra/README.md.
+# (These keys belong in [Unit] on systemd >= 230.)
+StartLimitIntervalSec=600
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=saxifrage
+Group=saxifrage
+WorkingDirectory=/home/saxifrage/Desktop/Emulator/full-stack-emulator/backend
+
+# Tunables live in infra/emulator.env. The leading "-" means a missing file is
+# not an error: the runner's built-in defaults then apply.
+EnvironmentFile=-/home/saxifrage/Desktop/Emulator/full-stack-emulator/infra/emulator.env
+
+# Written by install-emulator-service.sh. Puts npm on PATH for the frontend
+# build step, which systemd's minimal PATH would otherwise not find.
+EnvironmentFile=-/home/saxifrage/Desktop/Emulator/full-stack-emulator/infra/.node-path.env
+
+Environment=HOME=/home/saxifrage
+Environment=PYTHONUNBUFFERED=1
+
+ExecStart=/bin/bash /home/saxifrage/Desktop/Emulator/full-stack-emulator/infra/run-emulator-backend.sh
+
+# The runner's frontend build can legitimately take a couple of minutes on a Pi
+# after a dependency change; do not let systemd call that a startup failure.
+TimeoutStartSec=600
+
+Restart=on-failure
+RestartSec=5
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=emulator-backend
+
+# This service touches real hardware: /dev/ttyACM0 (Arctic HP Modbus),
+# /dev/i2c-* (relay detectors), /dev/spidev* and /dev/gpiomem (Sequent boards).
+# Do NOT add ProtectSystem/PrivateDevices without re-testing every sensor path.
+
+[Install]
+WantedBy=multi-user.target

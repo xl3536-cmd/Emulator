@@ -1,0 +1,1197 @@
+{
+  "rtd": {
+    "board_count": 24,
+    "invert_bits": false,
+    "reverse_byte_order": false,
+    "playback": {
+      "fast_interval_ms": 1000,
+      "slow_interval_ms": 60000,
+      "loop": true
+    },
+    "sensors": [
+      {
+        "sensor_name": "T1",
+        "board_index": 0,
+        "logical_stack": 0,
+        "logical_channel": 1
+      },
+      {
+        "sensor_name": "T2",
+        "board_index": 1,
+        "logical_stack": 0,
+        "logical_channel": 2
+      },
+      {
+        "sensor_name": "T3",
+        "board_index": 2,
+        "logical_stack": 0,
+        "logical_channel": 3
+      },
+      {
+        "sensor_name": "T4",
+        "board_index": 3,
+        "logical_stack": 0,
+        "logical_channel": 4
+      },
+      {
+        "sensor_name": "T5",
+        "board_index": 4,
+        "logical_stack": 0,
+        "logical_channel": 5
+      },
+      {
+        "sensor_name": "T6",
+        "board_index": 5,
+        "logical_stack": 0,
+        "logical_channel": 6
+      },
+      {
+        "sensor_name": "T7",
+        "board_index": 6,
+        "logical_stack": 0,
+        "logical_channel": 7
+      },
+      {
+        "sensor_name": "T8",
+        "board_index": 7,
+        "logical_stack": 0,
+        "logical_channel": 8
+      },
+      {
+        "sensor_name": "T9",
+        "board_index": 8,
+        "logical_stack": 1,
+        "logical_channel": 1
+      },
+      {
+        "sensor_name": "T10",
+        "board_index": 9,
+        "logical_stack": 1,
+        "logical_channel": 2
+      },
+      {
+        "sensor_name": "T11",
+        "board_index": 10,
+        "logical_stack": 1,
+        "logical_channel": 3
+      },
+      {
+        "sensor_name": "T12",
+        "board_index": 11,
+        "logical_stack": 1,
+        "logical_channel": 4
+      },
+      {
+        "sensor_name": "T13",
+        "board_index": 12,
+        "logical_stack": 1,
+        "logical_channel": 5
+      },
+      {
+        "sensor_name": "T14",
+        "board_index": 13,
+        "logical_stack": 1,
+        "logical_channel": 6
+      },
+      {
+        "sensor_name": "Test",
+        "board_index": 14,
+        "logical_stack": 1,
+        "logical_channel": 7
+      },
+      {
+        "sensor_name": "T16",
+        "board_index": 15,
+        "logical_stack": 1,
+        "logical_channel": 8
+      },
+      {
+        "sensor_name": "T17",
+        "board_index": 16,
+        "logical_stack": 2,
+        "logical_channel": 1
+      },
+      {
+        "sensor_name": "T18",
+        "board_index": 17,
+        "logical_stack": 2,
+        "logical_channel": 2
+      },
+      {
+        "sensor_name": "T19",
+        "board_index": 18,
+        "logical_stack": 2,
+        "logical_channel": 3
+      },
+      {
+        "sensor_name": "T20",
+        "board_index": 19,
+        "logical_stack": 2,
+        "logical_channel": 4
+      },
+      {
+        "sensor_name": "T21",
+        "board_index": 20,
+        "logical_stack": 2,
+        "logical_channel": 5
+      },
+      {
+        "sensor_name": "T22",
+        "board_index": 21,
+        "logical_stack": 2,
+        "logical_channel": 6
+      },
+      {
+        "sensor_name": "T23",
+        "board_index": 22,
+        "logical_stack": 2,
+        "logical_channel": 7
+      },
+      {
+        "sensor_name": "T24",
+        "board_index": 23,
+        "logical_stack": 2,
+        "logical_channel": 8
+      }
+    ]
+  },
+  "valves": {
+    "ball_valves": [
+      {
+        "id": "V01",
+        "name": "Valve 01",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": 33,
+          "channel": 8
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 9
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 9
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V03",
+        "name": "Valve 03",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 2
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 3
+        },
+        "output_channel": {
+          "stack": 1,
+          "channel": 3
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V04",
+        "name": "Valve 04",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 3
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 4
+        },
+        "output_channel": {
+          "stack": 1,
+          "channel": 4
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V05",
+        "name": "Valve 05",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 4
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 5
+        },
+        "output_channel": {
+          "stack": 1,
+          "channel": 5
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V06",
+        "name": "Valve 06",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 5
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 6
+        },
+        "output_channel": {
+          "stack": 1,
+          "channel": 6
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V07",
+        "name": "Valve 07",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 6
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 7
+        },
+        "output_channel": {
+          "stack": 1,
+          "channel": 7
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V08",
+        "name": "Valve 08",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 7
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 8
+        },
+        "output_channel": {
+          "stack": 1,
+          "channel": 8
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V09",
+        "name": "Valve 09",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 8
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 9
+        },
+        "output_channel": {
+          "stack": 1,
+          "channel": 9
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V10",
+        "name": "Valve 10",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 9
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 10
+        },
+        "output_channel": {
+          "stack": 1,
+          "channel": 10
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V11",
+        "name": "Valve 11",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 10
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 11
+        },
+        "output_channel": {
+          "stack": 1,
+          "channel": 11
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V12",
+        "name": "Valve 12",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 11
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 12
+        },
+        "output_channel": {
+          "stack": 1,
+          "channel": 12
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V13",
+        "name": "Valve 13",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 12
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 13
+        },
+        "output_channel": {
+          "stack": 1,
+          "channel": 13
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V14",
+        "name": "Valve 14",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 13
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 14
+        },
+        "output_channel": {
+          "stack": 1,
+          "channel": 14
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V15",
+        "name": "Valve 15",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 14
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 15
+        },
+        "output_channel": {
+          "stack": 1,
+          "channel": 15
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V16",
+        "name": "Valve 16",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 15
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 16
+        },
+        "output_channel": {
+          "stack": 1,
+          "channel": 16
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V17",
+        "name": "Valve 17",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 16
+        },
+        "input_channel": {
+          "stack": 1,
+          "channel": 1
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 1
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V18",
+        "name": "Valve 18",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 1
+        },
+        "input_channel": {
+          "stack": 1,
+          "channel": 2
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 2
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V19",
+        "name": "Valve 19",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 2
+        },
+        "input_channel": {
+          "stack": 1,
+          "channel": 3
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 3
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V20",
+        "name": "Valve 20",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 3
+        },
+        "input_channel": {
+          "stack": 1,
+          "channel": 4
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 4
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V21",
+        "name": "Valve 21",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 4
+        },
+        "input_channel": {
+          "stack": 1,
+          "channel": 5
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 5
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V22",
+        "name": "Valve 22",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 5
+        },
+        "input_channel": {
+          "stack": 1,
+          "channel": 6
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 6
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V23",
+        "name": "Valve 23",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 6
+        },
+        "input_channel": {
+          "stack": 1,
+          "channel": 7
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 7
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V24",
+        "name": "Valve 24",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 7
+        },
+        "input_channel": {
+          "stack": 1,
+          "channel": 8
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 8
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V25",
+        "name": "Valve 25",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 8
+        },
+        "input_channel": {
+          "stack": 1,
+          "channel": 9
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 9
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V26",
+        "name": "Valve 26",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 9
+        },
+        "input_channel": {
+          "stack": 1,
+          "channel": 10
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 10
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V27",
+        "name": "Valve 27",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 10
+        },
+        "input_channel": {
+          "stack": 1,
+          "channel": 11
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 11
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V28",
+        "name": "Valve 28",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 11
+        },
+        "input_channel": {
+          "stack": 1,
+          "channel": 12
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 12
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V29",
+        "name": "Valve 29",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 12
+        },
+        "input_channel": {
+          "stack": 1,
+          "channel": 13
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 13
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V30",
+        "name": "Valve 30",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 13
+        },
+        "input_channel": {
+          "stack": 1,
+          "channel": 14
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 14
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V31",
+        "name": "Valve 31",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 14
+        },
+        "input_channel": {
+          "stack": 1,
+          "channel": 15
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 15
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V32",
+        "name": "Valve 32",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 15
+        },
+        "input_channel": {
+          "stack": 1,
+          "channel": 16
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 16
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V33",
+        "name": "Valve 33",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 16
+        },
+        "input_channel": {
+          "stack": 2,
+          "channel": 1
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 1
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V34",
+        "name": "Valve 34",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 1
+        },
+        "input_channel": {
+          "stack": 2,
+          "channel": 2
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 2
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V35",
+        "name": "Valve 35",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 2
+        },
+        "input_channel": {
+          "stack": 2,
+          "channel": 3
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 3
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V36",
+        "name": "Valve 36",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 3
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 1
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 1
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      },
+      {
+        "id": "V37",
+        "name": "Valve 37",
+        "enabled": true,
+        "profile_type": "ov",
+        "open_detector": {
+          "i2c_address": 32,
+          "channel": 1
+        },
+        "close_detector": {
+          "i2c_address": 32,
+          "channel": 2
+        },
+        "open_feedback": {
+          "stack": 0,
+          "channel": 1
+        },
+        "close_feedback": {
+          "stack": 0,
+          "channel": 2
+        },
+        "behavior": {
+          "detector_delay_seconds": 3.0,
+          "feedback_hold_seconds": 8.0,
+          "default_position": "closed"
+        }
+      },
+      {
+        "id": "V38",
+        "name": "Valve 38",
+        "enabled": true,
+        "profile_type": "cv",
+        "relay_detector": {
+          "i2c_address": null,
+          "channel": 1
+        },
+        "input_channel": {
+          "stack": 0,
+          "channel": 1
+        },
+        "output_channel": {
+          "stack": 0,
+          "channel": 1
+        },
+        "behavior": {
+          "ramp_seconds": 90.0,
+          "v_min": 2.0,
+          "v_max": 10.0,
+          "cmd_threshold": 1.9,
+          "target_deadband": 0.05
+        }
+      }
+    ],
+    "manual_analog_outputs": [
+      {
+        "channel": 1,
+        "name": "IR6U1",
+        "default_voltage": 0.0
+      },
+      {
+        "channel": 2,
+        "name": "IR6U2",
+        "default_voltage": 0.0
+      },
+      {
+        "channel": 3,
+        "name": "IR6L1",
+        "default_voltage": 0.0
+      },
+      {
+        "channel": 4,
+        "name": "IR6L2",
+        "default_voltage": 0.0
+      },
+      {
+        "channel": 5,
+        "name": "IR16U1",
+        "default_voltage": 0.0
+      },
+      {
+        "channel": 6,
+        "name": "IR16U2",
+        "default_voltage": 0.0
+      },
+      {
+        "channel": 7,
+        "name": "IR16L1",
+        "default_voltage": 0.0
+      },
+      {
+        "channel": 8,
+        "name": "IR16L2",
+        "default_voltage": 0.0
+      },
+      {
+        "channel": 9,
+        "name": "IRVWU1",
+        "default_voltage": 0.0
+      },
+      {
+        "channel": 10,
+        "name": "IRVWU2",
+        "default_voltage": 0.0
+      },
+      {
+        "channel": 11,
+        "name": "IRVWL1",
+        "default_voltage": 0.0
+      },
+      {
+        "channel": 12,
+        "name": "IRVWL2",
+        "default_voltage": 0.0
+      },
+      {
+        "channel": 13,
+        "name": "PCM6 - in tank",
+        "default_voltage": 0.0
+      },
+      {
+        "channel": 14,
+        "name": "PCM16 - in tank",
+        "default_voltage": 0.0
+      },
+      {
+        "channel": 15,
+        "name": "PCMWarm - in tank",
+        "default_voltage": 0.0
+      }
+    ],
+    "relay_detectors": [],
+    "relay_output_i2c_bus": 1
+  },
+  "arctic_hp": {
+    "port": {
+      "serial_file": "/dev/ttyACM0",
+      "timeout": 1.5,
+      "baudrate": 2400,
+      "bytesize": 8,
+      "parity": "E",
+      "stopbits": 1
+    },
+    "devices": [
+      {
+        "device_id": 1,
+        "unit_id": 1,
+        "name": "Arctic Heat Pump 1",
+        "display_side": "left",
+        "esp32_ip": "192.168.68.79"
+      },
+      {
+        "device_id": 2,
+        "unit_id": 4,
+        "name": "Arctic Heat Pump 2",
+        "display_side": "right",
+        "esp32_ip": "192.168.68.67"
+      }
+    ]
+  },
+  "ui": {
+    "theme": "light"
+  }
+}
