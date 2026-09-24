@@ -76,7 +76,7 @@ BITFIELDS: Dict[int, tuple[str, Dict[int, str]]] = {
     2135: ("2135 Status register 1 bits", {
         0: "Unit ON/OFF status",
         1: "Compressor status (manual/document bit)",
-        2: "Compressor status (NYSERDA backend decode bit)",
+        2: "Compressor status (controller backend decode bit)",
         3: "Medium wind speed",
         4: "Low wind speed",
         5: "Water pump",
@@ -104,7 +104,7 @@ BITFIELDS: Dict[int, tuple[str, Dict[int, str]]] = {
         6: "High pressure switch protection",
         7: "Low pressure switch protection",
         8: "Water flow switch protection",
-        9: "Water flow protection (NYSERDA backend decode bit)",
+        9: "Water flow protection (controller backend decode bit)",
         10: "Low ambient temp protection",
         11: "Primary circuit low pressure protection",
         12: "Secondary circuit low pressure protection",
