@@ -73,14 +73,14 @@ def build_default_config() -> EmulatorConfig:
                     unit_id=1,
                     name="Arctic Heat Pump 1",
                     display_side="left",
-                    esp32_ip="192.168.68.79",
+                    esp32_ip="replace with your IP",
                 ),
                 ArcticDeviceConfig(
                     device_id=2,
                     unit_id=4,
                     name="Arctic Heat Pump 2",
                     display_side="right",
-                    esp32_ip="192.168.68.67",
+                    esp32_ip="replace with your IP",
                 ),
             ]
         ),
