@@ -1,0 +1,22 @@
+#run this on terminal to fix make file
+
+cd ~/16uout-rpi
+
+# 1) Patch the fragile first line: hard-code the target name and force bash shell
+sudo sed -i '1s@.*@TARGET := 16uout@' Makefile
+sudo sed -i '1i SHELL := /bin/bash' Makefile
+
+# (optional) quick check
+nl -ba Makefile | sed -n '1,10p'
+
+# 2) Build and install
+sudo make clean || true
+sudo make
+sudo make install
+
+# 3) Verify it’s in PATH (for your user AND sudo)
+which 16uout || echo "not in user PATH"
+sudo sh -lc 'which 16uout || echo "not in sudo PATH"'
+
+# 4) If found, try help
+16uout -h || sudo 16uout -h

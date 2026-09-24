@@ -1,0 +1,170 @@
+#Date: 2025-09-24
+#Author: Xiaxin Liu
+#Description: Sequent Microsystem 16 0-10V OUTPUTS HAT, this gui can help you generate Voltage output as you wish 
+
+#!/usr/bin/env python3
+"""
+Sequent Microsystems Sixteen 0–10 V Outputs HAT — Tiny GUI (channels 1–16)
+
+- Uses vendor CLI `16uout` with:
+    write: 16uout <stack> uoutwr <ch> <volts>
+    read : 16uout <stack> uoutrd <ch>
+- Channels are **1..16** and voltage is in **V**.
+- Works with stacked boards (stack 0..7).
+
+Tested on: Raspberry Pi OS (Bookworm), Python 3.9+, tkinter.
+"""
+
+import tkinter as tk
+from tkinter import ttk
+from functools import partial
+import subprocess
+import shutil
+import re
+
+APP_TITLE   = "Sequent 16× 0–10 V Outputs — GUI"
+MAX_VOLT    = 10.0
+SLIDER_RES  = 0.01
+SLIDER_LEN  = 250
+CHANNELS    = 16
+STACK_MIN   = 0
+STACK_MAX   = 7
+
+# If your CLI requires sudo, keep this True.
+USE_SUDO = True
+
+CLI = shutil.which("16uout")
+if CLI is None:
+    raise SystemExit(
+        "\n[ERROR] `16uout` command not found.\n"
+        "Install the driver first:\n"
+        "  git clone https://github.com/SequentMicrosystems/16uout-rpi.git\n"
+        "  cd 16uout-rpi && sudo make install\n"
+        "Then re-run this script.\n"
+    )
+
+def _run_cli(args, timeout=2.5):
+    """Run `16uout` with args; return (ok, stdout_stripped)."""
+    cmd = ([CLI] + args) if not USE_SUDO else (["sudo", CLI] + args)
+    try:
+        cp = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+        ok = (cp.returncode == 0)
+        out = (cp.stdout or "").strip()
+        err = (cp.stderr or "").strip()
+        return ok, (out if out else err)
+    except Exception as e:
+        return False, str(e)
+
+def set_voltage(stack: int, ch: int, volts: float) -> bool:
+    """Clamp 0–10 V and write via `uoutwr` (channels 1..16)."""
+    v = max(0.0, min(MAX_VOLT, float(volts)))
+    ok, _ = _run_cli([str(stack), "uoutwr", str(ch), f"{v:.3f}"])
+    return ok
+
+def get_voltage(stack: int, ch: int):
+    """Read via `uoutrd`; return float volts or None."""
+    ok, out = _run_cli([str(stack), "uoutrd", str(ch)])
+    if not ok:
+        return None
+    m = re.search(r"(-?\d+(?:\.\d+)?)", out)
+    if not m:
+        return None
+    try:
+        return float(m.group(1))
+    except:
+        return None
+
+# ---- GUI --------------------------------------------------------------------
+
+class App(ttk.Frame):
+    def __init__(self, master):
+        super().__init__(master, padding=10)
+        self.grid(sticky="nsew")
+
+        # Stack selector
+        top = ttk.Frame(self)
+        top.grid(row=0, column=0, columnspan=3, sticky="w", pady=(0,8))
+        ttk.Label(top, text="Stack level:").pack(side="left", padx=(0,6))
+        self.stack = tk.IntVar(value=0)
+        stack_spin = ttk.Spinbox(top, from_=STACK_MIN, to=STACK_MAX, width=3, textvariable=self.stack)
+        stack_spin.pack(side="left")
+        ttk.Button(top, text="All OFF (0 V)", command=self.all_off).pack(side="left", padx=12)
+        ttk.Button(top, text="Readback", command=self.readback_all).pack(side="left")
+
+        # Headers
+        ttk.Label(self, text="Channel", font=("Segoe UI", 10, "bold")).grid(row=1, column=0, padx=4, pady=4)
+        ttk.Label(self, text="Voltage (drag or type ↵)", font=("Segoe UI", 10, "bold")).grid(row=1, column=1, padx=4, pady=4, columnspan=2)
+
+        self.vars = []
+        self.scales = []
+
+        r = 2
+        for idx in range(CHANNELS):
+            ch = idx + 1  # 1..16
+            ttk.Label(self, text=f"OUT{ch:02d}").grid(row=r, column=0, sticky="e", padx=(0,8))
+            sv = tk.StringVar(value="0.00")
+            self.vars.append(sv)
+
+            scale = tk.Scale(self, from_=0, to=MAX_VOLT, resolution=SLIDER_RES,
+                             orient="horizontal", length=SLIDER_LEN,
+                             command=partial(self.on_slider, ch, sv))
+            scale.grid(row=r, column=1, sticky="w")
+            self.scales.append(scale)
+
+            entry = ttk.Entry(self, textvariable=sv, width=6)
+            entry.grid(row=r, column=2, padx=(8,0))
+            entry.bind("<Return>", partial(self.on_entry, ch, scale, sv))
+            r += 1
+
+        self.status = tk.StringVar(value="Ready.")
+        ttk.Label(self, textvariable=self.status).grid(row=r, column=0, columnspan=3, sticky="w", pady=(8,0))
+
+    def on_slider(self, ch: int, sv: tk.StringVar, val: str):
+        try:
+            v = float(val)
+        except ValueError:
+            return
+        v = max(0.0, min(MAX_VOLT, v))
+        sv.set(f"{v:.2f}")
+        ok = set_voltage(self.stack.get(), ch, v)
+        self.status.set(f"OUT{ch:02d} → {v:.2f} V {'✓' if ok else '✗'}")
+
+    def on_entry(self, ch: int, scale: tk.Scale, sv: tk.StringVar, _event):
+        try:
+            v = float(sv.get())
+        except ValueError:
+            return
+        v = max(0.0, min(MAX_VOLT, v))
+        scale.set(v)  # triggers on_slider()
+
+    def all_off(self):
+        failed = []
+        for idx in range(CHANNELS):
+            ch = idx + 1
+            if not set_voltage(self.stack.get(), ch, 0.0):
+                failed.append(ch)
+            self.vars[idx].set("0.00")
+            self.scales[idx].set(0.0)
+        self.status.set("All OFF OK ✓" if not failed else f"All OFF done, failed: {failed}")
+
+    def readback_all(self):
+        any_ok = False
+        for idx in range(CHANNELS):
+            ch = idx + 1
+            v = get_voltage(self.stack.get(), ch)
+            if v is not None:
+                any_ok = True
+                v = max(0.0, min(MAX_VOLT, float(v)))
+                self.vars[idx].set(f"{v:.2f}")
+                self.scales[idx].set(v)
+        self.status.set("Readback updated." if any_ok else "Readback not supported/failed.")
+
+def main():
+    root = tk.Tk()
+    root.title(APP_TITLE)
+    root.resizable(False, False)
+    App(root)
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
