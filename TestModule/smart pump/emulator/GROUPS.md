@@ -25,7 +25,7 @@ Configure these profiles in the emulator GUI, clicking **Apply profile edits** a
 | Profile ID | 1 | 2 |
 | Serial adapter path | `/dev/ttyUSB0` | `/dev/ttyUSB0` |
 | MS/TP MAC | 11 | 12 |
-| BACnet device ID | 227011 | 227012 |
+| BACnet device ID | 227xxx | 227xxx |
 | Baud | 9600 | 9600 |
 | Max Master | 127 | 127 |
 | Max Info Frames | 1 | 1 |
