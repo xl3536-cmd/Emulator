@@ -55,8 +55,8 @@ Serial path determines group membership. For example:
 
 | Adapter group | Pump MACs | Start/stop behavior |
 | --- | --- | --- |
-| `/dev/ttyUSB0` | 11, 12 | Starts/stops these two together |
-| `/dev/ttyUSB1` | 21, 22, 23 | Starts/stops these three together |
+| `/dev/ttyUSB0` | xx, xx | Starts/stops these two together |
+| `/dev/ttyUSB1` | xx, xx, xx | Starts/stops these three together |
 
 Start each group by selecting one of its pumps and clicking **Start selected adapter group**. Other groups keep running when one is stopped. Prefer `/dev/serial/by-id/...` paths because USB numbering may change after reconnecting adapters. Aliases resolving to the same adapter are treated as one group.
 
