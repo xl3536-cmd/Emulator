@@ -49,18 +49,18 @@ Use these consistent example settings, changing IP addresses to match your LAN:
 
 | Setting | Example |
 | --- | --- |
-| BASrouter LAN IP | `192.168.68.5` (use its actual configured LAN mask) |
-| Controller Pi LAN IP | `192.168.68.101/22` |
+| BASrouter LAN IP | `192.168.xx.xx` (use its actual configured LAN mask) |
+| Controller Pi LAN IP | `192.168.xxx.xxx/22` |
 | BACnet/IP UDP port | `47808` / `0xBAC0` |
 | BASrouter BACnet/IP network | `1` (unique in your BACnet installation) |
-| BASrouter MS/TP network | `4001` |
-| BASrouter MS/TP MAC | `40` (blue in your router status screenshot) |
-| Emulator pump MS/TP MAC | `11` |
-| Emulator pump Device instance | `227011` |
+| BASrouter MS/TP network | `x001` |
+| BASrouter MS/TP MAC | `xx` (blue in your router status screenshot) |
+| Emulator pump MS/TP MAC | `xx` |
+| Emulator pump Device instance | `xxxxxx` |
 | MS/TP baud, both ends | `9600` |
 | MS/TP Max Master, both ends | `127` |
 | Emulator Max Info Frames | `1` |
-| Controller destination | `4001:11@192.168.68.5` |
+| Controller destination | `4001:11@xxx.xxx.xx.xx` |
 
 Network numbers, MS/TP MAC addresses, Device instances, and IP addresses are different identifiers. Keep both BACnet network numbers distinct. Every station on the MS/TP trunk needs a unique MAC, and every BACnet device needs a unique Device instance. Leave the BASrouter's own Device instance unique too. If your BASrouter already uses another MS/TP network number, put that number in the controller configuration instead.
 
@@ -130,14 +130,14 @@ Profile 1 retains your existing custom emulator name; its `source_name` records 
 
 | `--pump` | Name | MS/TP MAC | Device instance |
 | --- | --- | --- | --- |
-| `1` | Climate Master SP0 | `11` | `227011` |
-| `2` | Nordic SP0 | `12` | `227012` |
-| `3` | TESW SP0 | `21` | `227021` |
-| `4` | TESW SP1 | `22` | `227022` |
-| `5` | TESW SP2 | `23` | `227023` |
-| `6` | TESC SP0 | `31` | `227031` |
-| `7` | TESC SP1 | `32` | `227032` |
-| `8` | TESC SP2 | `33` | `227033` |
+| `1` | Climate Master SP0 | `xx` | `xxxxxx` |
+| `2` | Nordic SP0 | `xx` | `xxxxxx` |
+| `3` | TESW SP0 | `xx` | `xxxxxx` |
+| `4` | TESW SP1 | `xx` | `xxxxxx` |
+| `5` | TESW SP2 | `xx` | `xxxxxx` |
+| `6` | TESC SP0 | `xx` | `xxxxxx` |
+| `7` | TESC SP1 | `xx` | `xxxxxx` |
+| `8` | TESC SP2 | `xx` | `xxxxxx` |
 
 For example, `python3 run.py --pump 4` selects the TESW SP1 identity while retaining the readings and serial settings from `config.json`. Without `--pump`, the identity comes from `config.json`. An adapter path can be overridden with `--serial-port /dev/serial/by-id/...`.
 
