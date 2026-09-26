@@ -29,7 +29,7 @@ Configure these profiles in the emulator GUI, clicking **Apply profile edits** a
 | Baud | 9600 | 9600 |
 | Max Master | 127 | 127 |
 | Max Info Frames | 1 | 1 |
-| BASrouter MAC | 40 | 40 |
+| BASrouter MAC | xx | xx |
 
 Use your actual baud and router MAC if different. The `40` comes from the blue router MAC in your screenshot; the GUI field only checks for address conflicts and does not change router settings. Router and pump Max Master settings must include every master MAC on their trunk.
 
