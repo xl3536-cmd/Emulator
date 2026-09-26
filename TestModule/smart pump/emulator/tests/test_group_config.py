@@ -12,12 +12,12 @@ class GroupConfigurationTests(unittest.TestCase):
     def setUp(self):
         self.first = json.loads((Path(__file__).resolve().parents[1] / "config.json").read_text())
         self.first["router_mac"] = 40
-        self.first["pump"].update(id=1, mac=11, device_id=227011)
+        self.first["pump"].update(id=1, mac=xx, device_id=xxxxxx)
         self.first["max_master"] = 127
         self.first["baud"] = 9600
         self.first["serial_port"] = "/dev/ttyUSB0"
         self.second = copy.deepcopy(self.first)
-        self.second["pump"].update(id=2, mac=12, device_id=227012)
+        self.second["pump"].update(id=2, mac=xx, device_id=xxxxxx)
 
     def test_shared_adapter(self):
         groups = validate_devices([self.first, self.second])
@@ -35,16 +35,16 @@ class GroupConfigurationTests(unittest.TestCase):
 
     def test_separate_adapters(self):
         self.second["serial_port"] = "/dev/ttyUSB1"
-        self.second["pump"]["mac"] = 11
+        self.second["pump"]["mac"] = xx
         self.assertEqual(len(validate_devices([self.first, self.second])), 2)
 
     def test_duplicate_mac(self):
-        self.second["pump"]["mac"] = 11
+        self.second["pump"]["mac"] = xx
         with self.assertRaisesRegex(ValueError, "Duplicate pump MAC"):
             validate_devices([self.first, self.second])
 
     def test_router_collision(self):
-        self.second["pump"]["mac"] = 40
+        self.second["pump"]["mac"] = xx
         with self.assertRaisesRegex(ValueError, "BASrouter MAC"):
             validate_devices([self.first, self.second])
 
@@ -60,7 +60,7 @@ class GroupConfigurationTests(unittest.TestCase):
             validate_devices([self.first, self.second])
 
     def test_max_master_includes_router(self):
-        self.first["max_master"] = 12
+        self.first["max_master"] = xx
         with self.assertRaisesRegex(ValueError, "include the BASrouter"):
             validate_devices([self.first])
 
