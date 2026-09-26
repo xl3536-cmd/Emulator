@@ -1,0 +1,21 @@
+{
+  "local_ip": "192.168.xx.xx/xx",
+  "local_port": 47808,
+  "device_id": 999990,
+  "timeout": 5.0,
+
+  "router_ip": "192.168.xx.xx",
+  "router_port": 47808,
+
+  "mstp_network": 4001,
+
+  "pumps": [
+    {
+      "id": 1,
+      "name": "Grundfos Smart Pump 1",
+      "device_id": xxxxx,
+      "mac": 11,
+      "enabled": true
+    }
+  ]
+}

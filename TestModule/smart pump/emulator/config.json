@@ -1,0 +1,31 @@
+{
+  "serial_port": "/dev/ttyUSB0",
+  "baud": 9600,
+  "max_master": 127,
+  "max_info_frames": 1,
+  "pump": {
+    "id": 1,
+    "name": "Grundfos Smart Pump 1",
+    "device_id": xxxxxx,
+    "mac": 11
+  },
+  "initial": {
+    "bus_control": false,
+    "control_mode": 1,
+    "operating_mode": 2,
+    "setpoint": 50.0,
+    "fault_code": 0,
+    "warning_code": 0,
+    "operating_hours": 0.0,
+    "on_hours": 0.0
+  },
+  "readings": {
+    "flow_gpm": 40.0,
+    "pressure_psi": 15.0,
+    "power_w": 150.0,
+    "current_a": 1.2,
+    "temperature_c": 23.0,
+    "remote_temperature_c": 24.0,
+    "electronics_temperature_c": 35.0
+  }
+}

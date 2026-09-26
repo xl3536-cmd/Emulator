@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Grundfos Smart Pump 1 emulator",
+    "device_id": xxxxxx,
+    "mac": 11,
+    "source_name": "Climate Master SP0"
+  },
+  {"id": 2, "name": "Nordic SP0", "device_id": 227012, "mac": 12},
+  {"id": 3, "name": "TESW SP0", "device_id": 227021, "mac": 21},
+  {"id": 4, "name": "TESW SP1", "device_id": 227022, "mac": 22},
+  {"id": 5, "name": "TESW SP2", "device_id": 227023, "mac": 23},
+  {"id": 6, "name": "TESC SP0", "device_id": 227031, "mac": 31},
+  {"id": 7, "name": "TESC SP1", "device_id": 227032, "mac": 32},
+  {"id": 8, "name": "TESC SP2", "device_id": 227033, "mac": 33}
+]
