@@ -1124,3 +1124,6 @@ td {
     flex-direction: column;
   }
 }
+/* Grundfos cards reuse the existing module/card layout. */
+.grundfos-config-fields { border: 0; padding: 16px 0; margin: 0; min-width: 0; }
+.grundfos-log { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 260px; overflow: auto; }

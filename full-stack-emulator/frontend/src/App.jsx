@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { api } from './api/client'
 import Shell from './components/layout/Shell'
 import ArcticHpPage from './features/arcticHp/ArcticHpPage'
+import GrundfosPage from './features/grundfos/GrundfosPage'
 import DashboardPage from './features/dashboard/DashboardPage'
 import LeakSensorPage from './features/leakSensor/LeakSensorPage'
 import RtdPage from './features/rtd/RtdPage'
@@ -16,6 +17,7 @@ const TABS = [
   { id: 'valves', label: 'Valves' },
   { id: 'leak-sensors', label: 'Leak Sensor' },
   { id: 'arctic', label: 'Arctic HP' },
+  { id: 'grundfos', label: 'Grundfos Pumps' },
 ]
 
 const DEFAULT_TAB = 'dashboard'
@@ -56,6 +58,7 @@ function defaultRuntime() {
     valves: { ball_valves: [], relay_detectors: [] },
     leak_sensors: { sensors: [] },
     arctic_hp: { server: { running: false, transport_available: false, port: '', message: '' }, devices: [] },
+    grundfos: { transport_available: false, message: '', devices: [], groups: [], points: [], simulation_fields: [] },
   }
 }
 
@@ -109,6 +112,7 @@ export default function App() {
   const page = useMemo(() => {
     if (!config) return null
     if (activeTab === 'dashboard') return <DashboardPage runtime={runtime} />
+    if (activeTab === 'grundfos') return <GrundfosPage config={config} runtime={runtime} onConfigChange={handleConfigChange} onStartGroup={async (id) => { await api.startGrundfosGroup(id); setRuntime(await api.getRuntime()) }} onStopGroup={async (id) => { await api.stopGrundfosGroup(id); setRuntime(await api.getRuntime()) }} onSetValue={async (id, field, value) => { await api.setGrundfosValue(id, field, value); setRuntime(await api.getRuntime()) }} />
     if (activeTab === 'scheduling') return <SchedulingPage config={config} runtime={runtime} onConfigChange={handleConfigChange} onLoadCsv={async (payload) => { await api.loadCsv(payload); setRuntime(await api.getRuntime()) }} onSetPlayback={async (playing) => { await api.setPlayback(playing); setRuntime(await api.getRuntime()) }} onClearCsv={async () => { await api.clearCsv(); setRuntime(await api.getRuntime()) }} />
     if (activeTab === 'rtd') return <RtdPage config={config} runtime={runtime} onConfigChange={handleConfigChange} onSetBoardBits={async (boardIndex, bits) => { await api.setBoardBits(boardIndex, bits); setRuntime(await api.getRuntime()) }} />
     if (activeTab === 'valves') return <ValvePage config={config} runtime={runtime} onConfigChange={handleConfigChange} onValveOverride={async (valveId, voltage) => { await api.setValveOverride(valveId, voltage); setRuntime(await api.getRuntime()) }} />

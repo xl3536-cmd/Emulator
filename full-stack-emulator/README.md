@@ -1,12 +1,15 @@
 # Full Stack Emulator
 
-A modular full-stack emulator built from the Tkinter CV/OV emulator logic and the controller-style backend layering.
+A modular full-stack emulator built from the Tkinter CV/OV emulator logic and the layered backend architecture.
 
-It covers four emulator domains:
+It covers five emulator domains:
 - RTD ladder-resistor emulation through 74HC595 chain logic
 - Ball valve emulation with separate `cv` and `ov` behaviors
 - Leak-sensor 0-10V analog output emulation
 - Arctic heat pump Modbus RTU register emulation
+- Grundfos pump BACnet MS/TP emulation with configurable pump cards, measurement editing and controller-writable commands
+
+See [Grundfos setup and controller compatibility](GRUNDFOS_SETUP.md). Build the bundled engine on the emulator Pi before starting this module. Builds, tests and hardware verification remain for the operator to run.
 
 The backend is structured so bad UI config, missing HAT boards, or missing Python hardware libraries do not crash the app. Those conditions are surfaced in runtime state and the frontend instead.
 
@@ -178,7 +181,7 @@ If you moved or copied this project from another machine, do not reuse that mach
 Start the backend:
 
 ```powershell
-uvicorn app:app --reload --host 0.0.0.0 --port 8000
+uvicorn app:app --reload --host localhost --port 8000
 ```
 
 Backend URLs:
@@ -250,6 +253,10 @@ The backend creates this file automatically on first run if it does not exist:
 backend/emulator_config.json
 ```
 
+### Current limitations
+- Runtime verification depends on the target machine's installed Python hardware libraries and attached boards.
+- The current frontend config page exposes the full RTD and valve tables, but it is still a first-pass editor rather than a polished production UI.
+- Arctic HP UI currently focuses on register editing and server control, not a custom visual dashboard for the heat pump.
 
 ## Troubleshooting
 

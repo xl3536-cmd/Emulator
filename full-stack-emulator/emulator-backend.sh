@@ -18,4 +18,4 @@ pip install -r "$BACKEND_DIR/requirements.txt" --quiet
 
 echo "Starting Full Stack Emulator..."
 cd "$SCRIPT_DIR"
-exec uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+exec uvicorn app:app --host "${EMULATOR_HOST:-localhost}" --port 8000 --reload

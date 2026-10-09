@@ -1,4 +1,5 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
+from src.managers.grundfos_manager import GrundfosConfigConflict
 
 from src.controllers.config_controller import config_controller
 from src.models.config import EmulatorConfig
@@ -14,4 +15,7 @@ def get_config():
 
 @router.put("", response_model=EmulatorConfig)
 def update_config(config: EmulatorConfig):
-    return config_controller.update_config(config)
+    try:
+        return config_controller.update_config(config)
+    except GrundfosConfigConflict as exc:
+        raise HTTPException(409, str(exc)) from exc

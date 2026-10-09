@@ -4,7 +4,7 @@ export default function Shell({ tabs, activeTab, onTabChange, children, status }
       <header className="hero">
         <div>
           <h1>Full Stack Emulator</h1>
-          <p className="hero-copy">RTD ladder control, grouped CV and OV valve emulation, leak-sensor analog outputs, and Arctic heat-pump runtime tools.</p>
+          <p className="hero-copy">RTD ladder control, grouped CV and OV valves, leak-sensor outputs, Arctic heat pumps, and Grundfos BACnet MS/TP pumps.</p>
         </div>
         <div className="hero-status">
           <span>{status}</span>

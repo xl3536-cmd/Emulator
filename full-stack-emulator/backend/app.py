@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from src.managers.emulator_manager import emulator_manager
 from src.routes.config_routes import router as config_router
+from src.routes.grundfos_routes import router as grundfos_router
 from src.routes.arctic_routes import router as arctic_router
 from src.routes.emulator_routes import router as emulator_router
 from src.routes.leak_sensor_routes import router as leak_sensor_router
@@ -41,6 +42,7 @@ app.include_router(rtd_router)
 app.include_router(valve_router)
 app.include_router(leak_sensor_router)
 app.include_router(arctic_router)
+app.include_router(grundfos_router)
 
 
 @app.get("/")

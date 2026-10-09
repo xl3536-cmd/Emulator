@@ -14,6 +14,10 @@ Main route groups:
 - `/api/runtime/valves`: set or clear CV valve input voltage overrides.
 - `/api/runtime/leak-sensors`: write configured leak sensor output voltage.
 - `/api/runtime/arctic-hp`: start/stop the Arctic Modbus server and edit device registers.
+- `/api/runtime/grundfos/{card_id}/start` and `/stop`: start/stop the selected pump's adapter group.
+- `/api/runtime/grundfos/{card_id}/values/{field}`: apply a live value (`{"value": number}`) or release a command/measurement override (`{"value": null}`).
+
+Grundfos follows the same route/controller/service/manager/sensor layers. Configuration persists in `grundfos.devices`; `/api/runtime` includes its snapshots under `grundfos`. The sensor adapter owns the bundled C engine processes. See [the setup guide](../GRUNDFOS_SETUP.md) for build instructions and emulator compatibility with the unchanged top-level controller src.
 
 ## Runtime Flow
 

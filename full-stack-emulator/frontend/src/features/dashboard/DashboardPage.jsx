@@ -7,6 +7,7 @@ export default function DashboardPage({ runtime }) {
   const activeLeakOutputs = leakSensors.filter((item) => Number(item.voltage ?? 0) > 0.01).length
   const slowMode = runtime.rtd.playback.mode === 'slow'
   const arcticServer = runtime.arctic_hp.server
+  const pumps = runtime.grundfos?.devices ?? []
 
   return (
     <div className="page-grid">
@@ -20,11 +21,18 @@ export default function DashboardPage({ runtime }) {
           <div><strong>{slowMode ? 'SLOW' : 'FAST'}</strong><span>Playback Mode</span></div>
           <div><strong>{arcticServer.running ? 'RUNNING' : 'STOPPED'}</strong><span>Arctic Server</span></div>
           <div><strong>{arcticServer.transport_available ? 'ONLINE' : 'OFFLINE'}</strong><span>Arctic Transport</span></div>
+          <div><strong>{pumps.filter((pump) => pump.live).length}/{pumps.length}</strong><span>Grundfos Pumps Running</span></div>
         </div>
       </Card>
 
       <Card title="Module Guide" subtitle="How each emulator module works and what drives its runtime behavior.">
         <div className="dashboard-guide-grid">
+          <section className="dashboard-guide-card">
+            <span className="dashboard-guide-tag">Grundfos</span>
+            <strong>BACnet MS/TP pump cards</strong>
+            <p>Configure each pump's MAC, device instance, RS485 adapter and starting readings. Pumps sharing an adapter run together through the BASrouter to the controller.</p>
+            <p>Live measurement edits and output commands share the C pump engine used for BACnet reads and writes. BusControl chooses whether bus commands or local settings drive pump operation.</p>
+          </section>
           <section className="dashboard-guide-card">
             <span className="dashboard-guide-tag">RTD</span>
             <strong>Shift-register resistance emulator</strong>

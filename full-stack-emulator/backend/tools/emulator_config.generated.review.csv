@@ -1,0 +1,95 @@
+kind,id,board_index,position,stack,channel,detail,detector,enabled
+rtd,T1,0,1,0,1,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T2,1,2,0,2,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T3,2,3,0,3,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T4,3,4,0,4,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T5,4,5,0,5,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T6,5,6,0,6,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T37,6,7,0,7,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T38,7,8,0,8,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T7,8,9,1,1,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T8,9,10,1,2,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T9,10,11,1,3,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T10,11,12,1,4,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T11,12,13,1,5,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T12,13,14,1,6,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T39,14,15,1,7,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T40,15,16,1,8,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T13,16,17,2,1,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T14,17,18,2,2,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T15,18,19,2,3,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T16,19,20,2,4,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T17,20,21,2,5,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T18,21,22,2,6,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T19,22,23,2,7,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T20,23,24,2,8,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T21,24,25,3,1,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T22,25,26,3,2,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T23,26,27,3,3,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T24,27,28,3,4,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T25,28,29,3,5,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T26,29,30,3,6,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T27,30,31,3,7,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T28,31,32,3,8,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T29,32,33,4,1,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T30,33,34,4,2,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T31,34,35,4,3,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T32,35,36,4,4,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T33,36,37,4,5,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T34,37,38,4,6,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T35,38,39,4,7,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T36,39,40,4,8,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T37C,40,41,5,1,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T38C,41,42,5,2,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T39C,42,43,5,3,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+rtd,T40C,43,44,5,4,95.0-150.0ohm -10.0-80.0C step 2.0 5-bit,,
+cv,CV1,,,,,in stack 0 ch 1 / out stack 0 ch 1,0x21:3,no
+cv,CV2,,,,,in stack 0 ch 2 / out stack 0 ch 2,0x21:4,no
+cv,CV3,,,,,in stack 0 ch 3 / out stack 0 ch 3,0x22:1,no
+cv,CV4,,,,,in stack 0 ch 4 / out stack 0 ch 4,0x22:2,no
+cv,CV5,,,,,in stack 0 ch 5 / out stack 0 ch 5,0x22:3,no
+cv,CV6,,,,,in stack 0 ch 6 / out stack 0 ch 6,0x22:4,no
+cv,CV7,,,,,in stack 0 ch 7 / out stack 0 ch 7,0x23:7,yes
+cv,CV8,,,,,in stack 0 ch 8 / out stack 0 ch 8,0x23:8,yes
+cv,CV9,,,,,in stack 0 ch 9 / out stack 0 ch 9,0x24:13,yes
+cv,CV10,,,,,in stack 0 ch 10 / out stack 0 ch 10,0x24:14,yes
+cv,CV11,,,,,in stack 0 ch 11 / out stack 0 ch 11,0x24:15,yes
+cv,CV12,,,,,in stack 0 ch 12 / out stack 0 ch 12,0x24:16,yes
+cv,CV13,,,,,in stack 0 ch 13 / out stack 0 ch 13,0x25:1,yes
+cv,CV14,,,,,in stack 0 ch 14 / out stack 0 ch 14,0x25:2,yes
+cv,CV15,,,,,in stack 0 ch 15 / out stack 0 ch 15,0x25:3,yes
+cv,CV16,,,,,in stack 0 ch 16 / out stack 0 ch 16,0x25:4,yes
+ov,OV1,,,,,open fb stack 0 ch 1 / close fb stack 0 ch 2,0x20:2 0x20:1,no
+ov,OV2,,,,,open fb stack 0 ch 3 / close fb stack 0 ch 4,0x20:4 0x20:3,no
+ov,OV3,,,,,open fb stack 0 ch 5 / close fb stack 0 ch 6,0x20:6 0x20:5,no
+ov,OV4,,,,,open fb stack 0 ch 7 / close fb stack 0 ch 8,0x20:8 0x20:7,no
+ov,OV5,,,,,open fb stack 0 ch 9 / close fb stack 0 ch 10,0x20:10 0x20:9,no
+ov,OV6,,,,,open fb stack 0 ch 11 / close fb stack 0 ch 12,0x20:12 0x20:11,no
+ov,OV7,,,,,open fb stack 0 ch 13 / close fb stack 0 ch 14,0x20:14 0x20:13,no
+ov,OV8,,,,,open fb stack 0 ch 15 / close fb stack 0 ch 16,0x20:16 0x20:15,no
+ov,OV9,,,,,open fb stack 1 ch 1 / close fb stack 1 ch 2,0x21:2 0x21:1,no
+ov,OV10,,,,,open fb stack 1 ch 3 / close fb stack 1 ch 4,0x21:6 0x21:5,no
+ov,OV11,,,,,open fb stack 1 ch 5 / close fb stack 1 ch 6,0x21:8 0x21:7,no
+ov,OV12,,,,,open fb stack 1 ch 7 / close fb stack 1 ch 8,0x21:10 0x21:9,no
+ov,OV13,,,,,open fb stack 1 ch 9 / close fb stack 1 ch 10,0x21:12 0x21:11,no
+ov,OV14,,,,,open fb stack 1 ch 11 / close fb stack 1 ch 12,0x21:14 0x21:13,no
+ov,OV15,,,,,open fb stack 1 ch 13 / close fb stack 1 ch 14,0x21:16 0x21:15,no
+ov,OV16,,,,,open fb stack 1 ch 15 / close fb stack 1 ch 16,0x22:6 0x22:5,no
+ov,OV17,,,,,open fb stack 2 ch 1 / close fb stack 2 ch 2,0x22:8 0x22:7,no
+ov,OV18,,,,,open fb stack 2 ch 3 / close fb stack 2 ch 4,0x22:10 0x22:9,no
+ov,OV19,,,,,open fb stack 2 ch 5 / close fb stack 2 ch 6,0x22:12 0x22:11,no
+ov,OV20,,,,,open fb stack 2 ch 7 / close fb stack 2 ch 8,0x22:14 0x22:13,no
+ov,OV21,,,,,open fb stack 2 ch 9 / close fb stack 2 ch 10,0x22:16 0x22:15,no
+ov,OV22,,,,,open fb stack 2 ch 11 / close fb stack 2 ch 12,0x23:2 0x23:1,yes
+ov,OV23,,,,,open fb stack 2 ch 13 / close fb stack 2 ch 14,0x23:4 0x23:3,yes
+ov,OV24,,,,,open fb stack 2 ch 15 / close fb stack 2 ch 16,0x23:6 0x23:5,yes
+ov,OV25,,,,,open fb stack 3 ch 1 / close fb stack 3 ch 2,0x23:10 0x23:9,yes
+ov,OV26,,,,,open fb stack 3 ch 3 / close fb stack 3 ch 4,0x23:12 0x23:11,yes
+ov,OV27,,,,,open fb stack 3 ch 5 / close fb stack 3 ch 6,0x23:14 0x23:13,yes
+ov,OV28,,,,,open fb stack 3 ch 7 / close fb stack 3 ch 8,0x23:16 0x23:15,yes
+ov,OV29,,,,,open fb stack 3 ch 9 / close fb stack 3 ch 10,0x24:2 0x24:1,yes
+ov,OV30,,,,,open fb stack 3 ch 11 / close fb stack 3 ch 12,0x24:4 0x24:3,yes
+ov,OV31,,,,,open fb stack 3 ch 13 / close fb stack 3 ch 14,0x24:6 0x24:5,yes
+ov,OV32,,,,,open fb stack 3 ch 15 / close fb stack 3 ch 16,0x24:8 0x24:7,yes
+ov,OV33,,,,,open fb stack 4 ch 1 / close fb stack 4 ch 2,0x24:10 0x24:9,yes
+ov,OV34,,,,,open fb stack 4 ch 3 / close fb stack 4 ch 4,0x24:12 0x24:11,yes

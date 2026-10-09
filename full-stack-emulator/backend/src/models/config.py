@@ -1,4 +1,5 @@
 from src.models.arctic import ArcticDeviceConfig, ArcticHpConfig, ArcticPortConfig
+from src.models.grundfos import GrundfosConfig, GrundfosDeviceConfig
 from src.models.emulator import EmulatorConfig
 from src.models.leak_sensor import LeakSensorChannelConfig, LeakSensorConfig, LeakSensorItemConfig
 from src.models.rtd import CsvPlaybackConfig, RTDConfig, RTDSensorConfig
@@ -25,6 +26,8 @@ __all__ = [
     "CsvPlaybackConfig",
     "DetectorChannelConfig",
     "EmulatorConfig",
+    "GrundfosConfig",
+    "GrundfosDeviceConfig",
     "IOChannelConfig",
     "LeakSensorChannelConfig",
     "LeakSensorConfig",

@@ -3,6 +3,7 @@ import asyncio
 from src.config.store import config_store
 from src.config.runtime_store import runtime_store
 from src.managers.arctic_hp_manager import ArcticHPManager
+from src.managers.grundfos_manager import GrundfosManager
 from src.managers.rtd_manager import RTDManager
 from src.managers.leak_sensor_manager import LeakSensorManager
 from src.managers.scheduling_manager import SchedulingManager
@@ -20,6 +21,7 @@ class EmulatorManager:
         self.leak_sensor_manager = LeakSensorManager(self.config.leak_sensors)
         self.scheduling_manager = SchedulingManager(self.rtd_manager, self.config.valves)
         self.arctic_hp_manager = ArcticHPManager(self.config.arctic_hp)
+        self.grundfos_manager = GrundfosManager(self.config.grundfos)
         self._task = None
         self._running = False
 
@@ -39,6 +41,7 @@ class EmulatorManager:
             except BaseException:
                 pass
             self._task = None
+        self.grundfos_manager.stop_all()
         self._save_runtime_if_needed(force=True)
         self.arctic_hp_manager.stop_server()
         self.leak_sensor_manager.cleanup()
@@ -53,6 +56,10 @@ class EmulatorManager:
             await asyncio.sleep(0.5)
 
     def refresh_config(self, new_config: EmulatorConfig) -> EmulatorConfig:
+        with self.grundfos_manager.configuration_update(new_config.grundfos):
+            return self._refresh_config(new_config)
+
+    def _refresh_config(self, new_config: EmulatorConfig) -> EmulatorConfig:
         self.config = config_store.save(new_config)
         self.rtd_manager.apply_config(self.config.rtd)
         self.valve_manager.apply_config(self.config.valves)
@@ -79,6 +86,7 @@ class EmulatorManager:
                 "sensors": [item.model_dump() for item in self.leak_sensor_manager.snapshot()],
             },
             arctic_hp=self.arctic_hp_manager.snapshot(),
+            grundfos=self.grundfos_manager.snapshot(),
         )
         return snapshot.model_dump()
 
